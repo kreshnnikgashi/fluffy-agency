@@ -1,0 +1,104 @@
+button {
+  background-color: white;
+  border: none;
+}
+
+.bg-color {
+  background-color: #f4f6f7;
+  height: 810px;
+}
+
+.centered-container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 144px;
+}
+
+.main-nav__list {
+  display: flex;
+}
+
+.main-nav__item {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 25px auto 25px;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: #13253a;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 12px;
+}
+/*  Banner */
+
+.banner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 178px;
+  border-bottom: 1px solid #f4f6f7;
+}
+
+.banner__image {
+  margin-left: 65px;
+}
+
+.banner-textual {
+  margin-right: 65px;
+}
+
+.banner-textual__sub-heading {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.8px;
+  color: #2557ab;
+  margin-bottom: 5px;
+}
+
+.banner-textual__heading {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 62px;
+  color: #13253a;
+  margin-bottom: 10px;
+}
+
+.banner-textual__paragraph {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #13253a;
+  margin-bottom: 20px;
+}
+
+.icon-bg {
+  background-color: #ff7f57;
+}
+
+.banner-textual__button {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23px;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 19px 42px;
+}
+
+.banner-textual__button:hover {
+  transform: scale(1.02);
+}
+
+/* Our Services */
