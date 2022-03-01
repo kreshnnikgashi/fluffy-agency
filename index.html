@@ -265,23 +265,31 @@
     <footer class="footer-bg">
       <form class="footer centered-container" action="">
         <h5 class="footer-contact__heading">Contact Us</h5>
-        <label for="Full Name" class="footer-contact__name"
-          >Full Name
-          <input type="text" class="footer-contact__name--text" />
-        </label>
-        <label for="Email Adress" class="footer-contact__email"
-          >Email Adress
-          <input type="email" class="footer-contact__name--email" />
-        </label>
-        <label for="Comment">
-          <textarea
-            name="comment"
-            id="comment"
-            cols="30"
-            rows="10"
-            class="footer-contact__name--comment"
-          ></textarea>
-        </label>
+        <div class="footer__form__item">
+          <label for="Full Name " class="footer__form__label"
+            >Full Name
+            <input type="text" class="footer__form__input" />
+          </label>
+        </div>
+        <div class="footer__form__item">
+          <label for="Email" class="footer__form__label"
+            >Email Adress
+            <input type="email" class="footer__form__input" />
+          </label>
+        </div>
+        <div class="footer__form__item">
+          <label
+            for="Write Message"
+            placeholder="Write Your Message"
+            class="footer__form__label"
+            >Your Message
+            <textarea
+              name="Message"
+              id=""
+              class="footer__form__text-area"
+            ></textarea>
+          </label>
+        </div>
         <button type="submit" class="footer-contact__button">
           Submit Your Message
         </button>

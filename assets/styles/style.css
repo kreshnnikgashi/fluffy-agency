@@ -39,6 +39,7 @@ button {
 }
 
 .main-nav__link {
+  position: relative;
   text-decoration: none;
   color: #13253a;
   font-family: "Nunito", sans-serif;
@@ -46,13 +47,22 @@ button {
   font-size: 1.4rem;
   line-height: 1.2rem;
 }
-
-.main-nav__link:hover {
-  text-decoration: underline;
-  text-decoration-color: #ff7f57;
-  text-decoration-thickness: 2px;
-  transition: all 0.5s ease-in-out;
+.main-nav__link::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -3px;
+  background-color: #ff7f57;
+  transition: all 0.5s ease-in;
 }
+
+.main-nav__link:hover::after {
+  width: 100%;
+  color: #ff7f57;
+}
+
 /*  Banner */
 .bg-color {
   background: #f4f6f7;
@@ -116,7 +126,7 @@ button {
 }
 
 .banner-textual__link:hover {
-  transform: scale(1.02);
+  transform: scale(1.1);
 }
 
 /* Our Services */
@@ -400,6 +410,7 @@ button {
 }
 
 .cfa__link {
+  display: inline-block;
   text-decoration: none;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
@@ -412,23 +423,11 @@ button {
 }
 
 .cfa__link:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* *Footer */
-input {
-  background: inherit;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
 
-textarea {
-  background: inherit;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
 .copy-right-bg {
   background: #13253a;
 }
@@ -466,18 +465,6 @@ textarea {
   background: #13253a;
 }
 
-.footer-contact__name,
-.footer-contact__email {
-  font-family: "Nunito", sans-serif;
-  font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-  color: #fff;
-}
-
-.footer-contact__name--text {
-  border-bottom: 1px solid #fff;
-}
 .footer-contact__button {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
@@ -488,17 +475,50 @@ textarea {
   background: #ff7f57;
 }
 
-.footer-contact__name--text {
-  width: 37.1rem;
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid #fff;
-  padding: 0.5rem 0;
+.footer-contact__button:hover {
+  transform: scale(1.04);
 }
-.footer-contact__name--email {
-  width: 37.1rem;
+.footer__form__item {
+  width: 36.9rem;
+  margin-bottom: 0.5rem;
+}
+.footer__form__label {
   display: flex;
   flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+input {
+  margin: 0;
+  border: none;
+}
+
+textarea {
+  margin: 0;
+  background-color: inherit;
+  border: none;
+  resize: none;
+}
+
+.footer__form__input {
+  background-color: inherit;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: #fff;
   border-bottom: 1px solid #fff;
-  padding: 0.5rem 0;
+}
+
+.footer__form__text-area {
+  border-bottom: 1px solid #fff;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: #fff;
 }
