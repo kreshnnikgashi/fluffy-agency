@@ -8,13 +8,13 @@ button {
 }
 .bg-color {
   background: #fff;
-  height: 100%;
 }
 
 .bg-color-orange {
   background-color: #ff7f57;
-  width: 100%;
 }
+
+.header__inner-content,
 .centered-container,
 .banner__inner-content,
 .our-services__inner-content,
@@ -25,7 +25,7 @@ button {
   margin: 0 auto;
 }
 
-.header {
+.header__inner-content {
   padding: 4rem 0 14.5rem 0;
   display: flex;
   justify-content: space-between;
